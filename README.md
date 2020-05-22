@@ -1,7 +1,7 @@
 # SSL Certificate Guide
 
 1. при необходимости изменяем домен (cc.asterix) в req.cnf и генерим сертификат:
-openssl req -x509 -nodes -days 730 -newkey rsa:2048 -keyout cert.key -out cert.pem -config req.cnf -sha256
+`openssl req -x509 -nodes -days 730 -newkey rsa:2048 -keyout cert.key -out cert.pem -config req.cnf -sha256`
 
 2. Прописываем сертификаты в nginx
 
